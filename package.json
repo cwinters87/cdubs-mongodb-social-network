@@ -1,0 +1,26 @@
+{
+  "name": "cdubs-mongoose-social-network",
+  "version": "1.0.0",
+  "description": "Back-end for a social network",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwinters87/cdubs-mongodb-social-network.git"
+  },
+  "author": "Chris Winters",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cwinters87/cdubs-mongodb-social-network/issues"
+  },
+  "homepage": "https://github.com/cwinters87/cdubs-mongodb-social-network#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.13.2",
+    "nodemon": "^2.0.12"
+  }
+}
