@@ -39,8 +39,11 @@ const UserController = {
         res.sendStatus(400)
       })
   },
-
-  // create user
+  // create user, expects:
+  // {
+  //   "username": "chris",
+  //   "email": "chris@gmail.com"
+  // }
   createUser({ body }, res) {
     User.create(body)
       .then(dbUserData => res.json(dbUserData))

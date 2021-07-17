@@ -23,6 +23,13 @@ const thoughtController = {
   },
 
   // add thought to user
+  // expects:
+  // {
+  //   "thoughtText": "Here's a cool thought by chris...",
+  //   "username": "chris",
+  //   "userId": "60f33b80049c6059006c1fb3"
+  // }
+
   addThought({ params, body }, res) {
     Thought.create(body)
       .then(({ _id }) => {
